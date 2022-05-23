@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>true</applicability>
+        <autopilot_topic>false</autopilot_topic>
+        <cb_topic_id display_value="Submit a Request">98eac6c397630110d321bfb3f153af1b</cb_topic_id>
+        <channels/>
+        <definition>{"id":"98eac6c397630110d321bfb3f153af1b","name":"Submit a Request","system_topic":false,"autopilot_topic":false,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","description":"Submit a Request","applicability":"true","categories":[],"key_phrases":["Submit a Request"],"variables":[{"name":"__segment_trigger_0d441a68c78a4973a05595b6b964e279_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Reference","table_name":"sys_user","name":"user","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[]},{"type":"Boolean","name":"RootDecisionBranch_721b064b2f6301107489780e3f96a1de","unique":false,"default_value":"true","key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[]},{"type":"String","name":"__silent_Branch_RootDecisionBranch_321b064b2a630110289328930da215de","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Decision_RootDecision_fe1b064b616301107f7f1e4c0925c8dd","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_TerminateGoal_02a397e9d9e24b15801a1019d7635976","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_StartGoal_316256b7a94848aa9fdcec740d193960","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_0d441a68c78a4973a05595b6b964e279_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_721b064b2f6301107489780e3f96a1de\");vaInputs.initialize(\"__silent_Decision_RootDecision_fe1b064b616301107f7f1e4c0925c8dd\");vaInputs.initialize(\"__silent_TerminateGoal_02a397e9d9e24b15801a1019d7635976\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_321b064b2a630110289328930da215de\");vaInputs.initialize(\"__silent_StartGoal_316256b7a94848aa9fdcec740d193960\");null;","fields":[{"name":"__silent_Decision_RootDecision_fe1b064b616301107f7f1e4c0925c8dd","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_fe1b064b616301107f7f1e4c0925c8dd\";vaInputs.__silent_Decision_RootDecision_fe1b064b616301107f7f1e4c0925c8dd=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_fe1b064b616301107f7f1e4c0925c8dd\";var ackMsg=null;ackMsg=null;vaInputs.RootDecisionBranch_721b064b2f6301107489780e3f96a1de=true;ackMsg;"},{"name":"__silent_Branch_RootDecisionBranch_321b064b2a630110289328930da215de","applicable":"vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_fe1b064b616301107f7f1e4c0925c8dd\" &amp;&amp; ((vaInputs.RootDecisionBranch_721b064b2f6301107489780e3f96a1de.getValue() == true))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_321b064b2a630110289328930da215de___RootDecisionBranch_321b064b2a630110289328930da215de\";vaInputs.__silent_Branch_RootDecisionBranch_321b064b2a630110289328930da215de=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_321b064b2a630110289328930da215de___RootDecisionBranch_321b064b2a630110289328930da215de\";var ackMsg=null;ackMsg=null;ackMsg;"},{"name":"__silent_StartGoal_316256b7a94848aa9fdcec740d193960","applicable":"vaVars.previous_graph_node==\"RootDecisionBranch_321b064b2a630110289328930da215de___RootDecisionBranch_321b064b2a630110289328930da215de\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___316256b7a94848aa9fdcec740d193960\";vaInputs.__silent_StartGoal_316256b7a94848aa9fdcec740d193960=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___316256b7a94848aa9fdcec740d193960\";var ackMsg=null;ackMsg=null;ackMsg;"},{"name":"__silent_TerminateGoal_02a397e9d9e24b15801a1019d7635976","applicable":"vaVars.previous_graph_node==\"Start___316256b7a94848aa9fdcec740d193960\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___02a397e9d9e24b15801a1019d7635976\";vaInputs.__silent_TerminateGoal_02a397e9d9e24b15801a1019d7635976=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___02a397e9d9e24b15801a1019d7635976\";var ackMsg=null;ackMsg=null;vaVars.__segment_trigger_0d441a68c78a4973a05595b6b964e279_done=true;ackMsg;"}],"variables_update":[]}],"roles":[],"active":true,"published":true,"library":false,"expose_on_palette":false,"palette_label":"","flexible_conversation_switching":false,"design_categories":[],"nlu_provider":"","nlu_model":"","nlu_intent":"","topic_type":"STANDARD","channels":[],"triggerable_by_notification":false,"secure_custom_input_control":false,"score":0.0,"visible":true,"discoverable":true,"sys_scope":"6ead8e780f603200cd674f8ce1050ed1","sys_domain":"global","title":"Submit a Request","nlu_intent_label":"","nlu_model_label":""}</definition>
+        <design_category/>
+        <discoverable>true</discoverable>
+        <expose_on_palette>false</expose_on_palette>
+        <fields/>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases>Submit a Request</key_phrases>
+        <last_published_on>2022-05-23 13:12:21</last_published_on>
+        <library>false</library>
+        <library_usage>null</library_usage>
+        <metaphone>SPMT RKST</metaphone>
+        <name>Submit a Request</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <published>true</published>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2022-05-23 13:12:21</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>7e1b064b97630110d321bfb3f153afde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Submit a Request</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cs_topic_7e1b064b97630110d321bfb3f153afde</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2022-05-23 13:12:21</sys_updated_on>
+        <title>Submit a Request</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>true</visible>
+    </sys_cs_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=7e1b064b97630110d321bfb3f153afde"/>
+</record_update>
